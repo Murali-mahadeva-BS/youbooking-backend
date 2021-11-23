@@ -5,7 +5,7 @@ const cors = require("cors");
 const fs = require("fs");
 const app = express();
 const { Sort, Filter } = require("./utils");
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8000;
 const WEBAPP_URL = process.env.WEBAPP_URL;
 
 app.use(
