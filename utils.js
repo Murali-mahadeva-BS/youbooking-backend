@@ -7,7 +7,7 @@ const Sort = async (sortItem, sortOrder, json) => {
     if (second.bookings.length > 1) {
       secondMinPrice = second.bookings.sort((a, b) => a - b)[0][sortItem];
     } else secondMinPrice = 0;
-    if (sortOrder === "ASC") return firstMinPrice - secondMinPrice;
+    if (sortOrder === "asc") return firstMinPrice - secondMinPrice;
     else return secondMinPrice - firstMinPrice;
   });
   return sortedBookings;
